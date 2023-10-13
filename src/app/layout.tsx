@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={clsx(nunito.variable, nunitoSans.variable)}>
       <body>
-        <Header />
+        <header />
         {children}
         <footer>Footer</footer>
         </body>
