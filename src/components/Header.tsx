@@ -5,7 +5,7 @@ import Link from "next/link";
 export default async function Header (){
     const client = createClient();
     const settings = await client.getSingle("settings");
-    return 
+    return (
         <header>{settings.data.site_title}
         <Link href="/">{settings.data.site_title}</Link>
             <nav>
@@ -18,4 +18,5 @@ export default async function Header (){
                 </ul>
             </nav>
         </header>
+    )
 } 
